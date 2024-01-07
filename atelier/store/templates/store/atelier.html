@@ -1,0 +1,72 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+<h3>Atelier</h3>
+
+
+<div class="row">
+		<div class="col-lg-6">
+			<div class="box-element" id="form-wrapper">
+				<form id="form">
+					<div id="user-info">
+						<div class="form-field">
+							<input required class="form-control" type="text" name="name" placeholder="Nume..">
+						</div>
+						<div class="form-field">
+							<input required class="form-control" type="email" name="email" placeholder="Email..">
+						</div>
+					</div>
+
+					<div id="shipping-info">
+						<hr>
+						<p>Informatii comanda:</p>
+						<hr>
+						<div class="form-field">
+							<input class="form-control" type="text" name="address" placeholder="Tip produs..">
+						</div>
+						<div class="form-field">
+							<input class="form-control" type="text" name="city" placeholder="Culoare..">
+						</div>
+						<div class="mb-3">
+							  <label for="exampleFormControlTextarea1" class="form-label">Descriere</label>
+							  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						</div>
+						<div class="mb-3">
+							  <label for="formFileMultiple" class="form-label">Imagine</label>
+							  <input class="form-control" type="file" id="formFileMultiple" multiple>
+						</div>
+
+					</div>
+
+
+    <div class="mb-3">
+		<p>Selecteaza tipul materialului:</p>
+      <select class="form-select" multiple aria-label="Multiple select example">
+          <option value="1">Bumbac</option>
+          <option value = "2">Jerse</option>
+          <option value = "3">Triplu voal</option>
+          <option value = "4">Bumbac satinat</option>
+          <option value = "5">Dantela simpla</option>
+          <option value = "6">Dantela 3D</option>
+          <option value = "7">Stofa</option>
+          <option value = "8">Catifea</option>
+          <option value = "9">Tafta</option>
+          <option value = "10">Bumbac</option>
+          <option value = "11">Tul simplu</option>
+          <option value = "12">Tul cu model</option>
+      </select>
+    </div>
+
+</form>
+        </div>
+    </div>
+			</div>
+<hr>
+					<input id="form-button" class="btn btn-success btn-block" type="submit" value="Continua">
+			<br>
+			<div class="box-element hidden" id="payment-info">
+				<small>Paypal Options</small>
+			</div>
+
+		</div>
+{% endblock content %}
