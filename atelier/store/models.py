@@ -10,6 +10,15 @@ class Customer(models.Model):
     def __str__(self):
         return self.name
 
+# class Dimensiuni(models.Model):
+#     customer = models.ForeignKey(Customer, on_delete=models.SET_NULL, null=True, blank=True)
+#     talie = models.FloatField()
+#     bust = models.FloatField()
+#     solduri = models.FloatField()
+#     umeri = models.FloatField()
+#     inaltime = models.FloatField()
+
+
 class Product(models.Model):
     name= models.CharField(max_length=200)
     price = models.FloatField()
